@@ -68,22 +68,4 @@ class BonusServiceTest {
         assertEquals(expected, actual);
     }
 
-    @Test
-    void shouldCalculateWithWrongExpectedAmount() {
-        BonusService service = new BonusService();
-
-        // подготавливаем данные:
-        long amount = 2000000_00;
-        boolean registered = false;
-        long expected = 2004;
-
-        // вызываем целевой метод:
-        long actual = service.calculate(amount, registered);
-
-        // производим проверку (сравниваем ожидаемый и фактический):
-        assertEquals(expected, actual);
-    }
-
-    
-
 }
